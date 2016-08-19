@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>ED1393F6-F56A-4DD4-9EDC-B9617BF46477</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TestAnimation</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1dea7868-c9f8-11e4-b52c-cbd5b80a063b</key>
+		<string>svn://192.168.0.101/MaiziEdu</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>IOS动画/TestAnimation/TestAnimation.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1dea7868-c9f8-11e4-b52c-cbd5b80a063b</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1dea7868-c9f8-11e4-b52c-cbd5b80a063b</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1dea7868-c9f8-11e4-b52c-cbd5b80a063b</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MaiziEdu</string>
+		</dict>
+	</array>
+</dict>
+</plist>

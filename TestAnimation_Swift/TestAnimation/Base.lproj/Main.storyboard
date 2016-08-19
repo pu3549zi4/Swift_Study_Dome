@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="TestAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ciy-OL-jou">
+                                <rect key="frame" x="128" y="517" width="344" height="31"/>
+                                <connections>
+                                    <action selector="scrolled:" destination="vXZ-lx-hvc" eventType="valueChanged" id="bUR-DM-60d"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="tHO-vv-V4L">
+                                <rect key="frame" x="128" y="562" width="344" height="31"/>
+                                <connections>
+                                    <action selector="veloScrolled:" destination="vXZ-lx-hvc" eventType="valueChanged" id="yFF-5y-c2z"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Damping" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Rp-fW-ovE">
+                                <rect key="frame" x="36" y="521" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Velocity" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lta-xb-czG">
+                                <rect key="frame" x="36" y="566" width="60" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acZ-pN-iqd">
+                                <rect key="frame" x="485" y="521" width="10" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uea-EB-HMO">
+                                <rect key="frame" x="485" y="566" width="10" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lta-xb-czG" firstAttribute="baseline" secondItem="Uea-EB-HMO" secondAttribute="baseline" id="6X0-Fl-6wb"/>
+                            <constraint firstItem="lta-xb-czG" firstAttribute="top" secondItem="8Rp-fW-ovE" secondAttribute="bottom" constant="24" id="B93-Ky-apd"/>
+                            <constraint firstItem="ciy-OL-jou" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Bh0-u0-NqG"/>
+                            <constraint firstItem="acZ-pN-iqd" firstAttribute="leading" secondItem="Uea-EB-HMO" secondAttribute="leading" id="DRb-Yc-zE9"/>
+                            <constraint firstItem="acZ-pN-iqd" firstAttribute="leading" secondItem="ciy-OL-jou" secondAttribute="trailing" constant="15" id="LqQ-yj-dRB"/>
+                            <constraint firstItem="ciy-OL-jou" firstAttribute="leading" secondItem="tHO-vv-V4L" secondAttribute="leading" id="MEY-id-KoV"/>
+                            <constraint firstItem="tHO-vv-V4L" firstAttribute="top" secondItem="ciy-OL-jou" secondAttribute="bottom" constant="15" id="NEj-Lp-mKb"/>
+                            <constraint firstItem="acZ-pN-iqd" firstAttribute="baseline" secondItem="8Rp-fW-ovE" secondAttribute="baseline" id="Wai-Fp-AQv"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="tHO-vv-V4L" secondAttribute="bottom" constant="8" symbolic="YES" id="jQb-2b-Pdy"/>
+                            <constraint firstItem="ciy-OL-jou" firstAttribute="trailing" secondItem="tHO-vv-V4L" secondAttribute="trailing" id="mTn-bl-5KA"/>
+                            <constraint firstItem="ciy-OL-jou" firstAttribute="leading" secondItem="8Rp-fW-ovE" secondAttribute="trailing" constant="24" id="nyy-HI-eso"/>
+                            <constraint firstItem="8Rp-fW-ovE" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="qvq-Jy-Tx8"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="lta-xb-czG" secondAttribute="bottom" constant="13" id="x1m-VX-XnM"/>
+                            <constraint firstItem="lta-xb-czG" firstAttribute="leading" secondItem="8Rp-fW-ovE" secondAttribute="leading" id="xSv-Tj-0hn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dampingLabel" destination="acZ-pN-iqd" id="Cke-fE-BAb"/>
+                        <outlet property="veloLable" destination="Uea-EB-HMO" id="Uon-aJ-MLn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-31" y="82"/>
+        </scene>
+        <!--Next View Controller-->
+        <scene sceneID="g1X-vS-bOj">
+            <objects>
+                <viewController id="c3B-XV-CfZ" customClass="NextViewController" customModule="TestAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j6t-Lc-QtH"/>
+                        <viewControllerLayoutGuide type="bottom" id="9SJ-J4-Ttr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Stf-WX-CdB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVn-tZ-yLT">
+                                <rect key="frame" x="25" y="28" width="94" height="30"/>
+                                <state key="normal" title="Start Animate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn1Click:" destination="c3B-XV-CfZ" eventType="touchUpInside" id="v5I-WE-7Xu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FeJ-Nz-kUk">
+                                <rect key="frame" x="133" y="28" width="120" height="30"/>
+                                <state key="normal" title="FallBack Animate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn2Click:" destination="c3B-XV-CfZ" eventType="touchUpInside" id="9CY-cO-LEt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4G-89-1nQ">
+                                <rect key="frame" x="267" y="28" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn3Click:" destination="c3B-XV-CfZ" eventType="touchUpInside" id="3qq-lz-CQi"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YPw-JG-U5i">
+                                <rect key="frame" x="56" y="95" width="248" height="72"/>
+                                <color key="backgroundColor" red="0.12925500549999999" green="0.77945772989999995" blue="0.66918864870000005" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Wi-mZ-U3E">
+                                <rect key="frame" x="56" y="211" width="248" height="72"/>
+                                <color key="backgroundColor" red="0.91485426059999997" green="0.57932536779999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lvc-hi-TAs">
+                                <rect key="frame" x="190" y="451" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstView" destination="YPw-JG-U5i" id="iMx-jp-SpH"/>
+                        <outlet property="mBtn1" destination="KVn-tZ-yLT" id="uTH-dO-A8s"/>
+                        <outlet property="mBtn2" destination="FeJ-Nz-kUk" id="DQQ-0w-ObN"/>
+                        <outlet property="mSubLabel" destination="lvc-hi-TAs" id="KJ6-DP-9Z1"/>
+                        <outlet property="secondView" destination="6Wi-mZ-U3E" id="DkN-VO-9aj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Yq-CF-nNx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-31" y="1529"/>
+        </scene>
+        <!--Animate View Controller-->
+        <scene sceneID="XAq-03-nt3">
+            <objects>
+                <viewController id="IEt-Or-Tdk" customClass="CAAnimateViewController" customModule="TestAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PS6-Wv-0mD"/>
+                        <viewControllerLayoutGuide type="bottom" id="swH-7x-sy2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dqb-Gs-xRh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEz-zo-2Kv">
+                                <rect key="frame" x="271" y="550" width="58" height="30"/>
+                                <state key="normal" title="Fallback">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="fallbackClicked:" destination="IEt-Or-Tdk" eventType="touchUpInside" id="I8m-mg-SUp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxQ-q1-wC0">
+                                <rect key="frame" x="362" y="550" width="33" height="30"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopClicked:" destination="IEt-Or-Tdk" eventType="touchUpInside" id="Ws7-Hq-yia"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8D-pK-60f">
+                                <rect key="frame" x="204" y="550" width="33" height="30"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startClicked:" destination="IEt-Or-Tdk" eventType="touchUpInside" id="b6V-X9-ZGR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dxQ-q1-wC0" firstAttribute="centerY" secondItem="yEz-zo-2Kv" secondAttribute="centerY" id="9Fu-dH-S6S"/>
+                            <constraint firstItem="dxQ-q1-wC0" firstAttribute="centerY" secondItem="i8D-pK-60f" secondAttribute="centerY" id="FBH-e4-aNA"/>
+                            <constraint firstItem="swH-7x-sy2" firstAttribute="top" secondItem="yEz-zo-2Kv" secondAttribute="bottom" constant="20" id="LJn-2K-yar"/>
+                            <constraint firstItem="dxQ-q1-wC0" firstAttribute="leading" secondItem="yEz-zo-2Kv" secondAttribute="trailing" constant="33" id="XEv-RH-Qzd"/>
+                            <constraint firstItem="yEz-zo-2Kv" firstAttribute="leading" secondItem="i8D-pK-60f" secondAttribute="trailing" constant="34" id="w6C-en-mau"/>
+                            <constraint firstAttribute="centerX" secondItem="yEz-zo-2Kv" secondAttribute="centerX" id="y09-ZL-Edi"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cCn-Xw-M2y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-31" y="2207"/>
+        </scene>
+    </scenes>
+</document>
